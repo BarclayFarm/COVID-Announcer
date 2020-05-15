@@ -16,7 +16,8 @@ def main():
     print("=======================================================")
     print("DO NOT CLOSE THIS WINDOW UNDER ANY CIRCUMSTANCES")
     print("THESE PSAs ARE REQUIRED. NO EXCEPTIONS.")
-    print("(C) 2020 Kevin Salvatorelli")
+    print("(C) 2020 Kevin Salvatorelli <kevsal.me>")
+    print("Originally for Barclay Farm Swim Club")
     print("=======================================================")
     print("")
 
