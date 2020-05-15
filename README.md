@@ -3,7 +3,7 @@ COVID-Announcer is a Python script that I wrote for my swim club to allow us to 
 
 ## License
 This software is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license.  
-THIS SOFTWARE IS PROVIDED WITH NO WARRANTY OF ANY KIND. USE AT YOUR OWN RISK. 
+THIS SOFTWARE IS PROVIDED WITH NO WARRANTY OF ANY KIND. USE AT YOUR OWN RISK.  
 This software is free to use for anyone, but it may not be resold.  
 
 ## How to Use
