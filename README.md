@@ -15,6 +15,8 @@ This software is for Windows. It may work on other platforms but is untested.
 * Press the Windows key and the letter R at the same time.
 * Enter shell:startup into the "Run" window that opens and hit enter.
 * In the folder that opens, add a shortcut to run.bat wherever you extracted COVID-Announcer.
+* Open a Command Prompt or Powershell Window as Administrator and enter `pip install pycaw schedule playsound`   
+Next time you login, COVID-Announcer will run when you login.  
 
 ## Add or Remove Announcements
 To add or remove an announcment, simply add or remove a MP3 file from the folder containing run.bat and main.py.  
