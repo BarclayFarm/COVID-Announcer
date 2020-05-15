@@ -9,7 +9,7 @@ import os
 runTime = 15
 # List to hold announcements
 announcementsPaths = []
-# Holds the next announcement to be ran
+# Holds the next announcement to be played
 next = 0
 
 def main():
@@ -25,6 +25,9 @@ def main():
         if file.endswith(".mp3"):
             print("Adding File: " + os.path.join(os.path.dirname(os.path.abspath(__file__)), file))
             announcementsPaths.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), file))
+
+    print("Running Initial Annoucement")
+    makeAnnouncement()
 
     print("Scheduling Tasks to be ran every " + str(runTime) + " minutes")
     schedule.every(runTime).minutes.do(makeAnnouncement)
@@ -56,14 +59,16 @@ def playSound(audioFile):
         volume = session._ctl.QueryInterface(ISimpleAudioVolume)
         volume.SetMasterVolume(0.1, None)
 
-    
-    # Play the audip
+    time.sleep(3)
+    # Play the audio
     playsound(audioFile)
     # Make sure Python is full volume
     for session in sessions:
         if session.Process and session.Process.name() == "Python.exe":
             volume = session._ctl.QueryInterface(ISimpleAudioVolume)
             volume.SetMasterVolume(1.0, None)
+
+    time.sleep(3)
 
     # Set all app back to full
     for session in sessions:
