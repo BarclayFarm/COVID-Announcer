@@ -61,14 +61,13 @@ def playSound(audioFile):
         volume.SetMasterVolume(0.1, None)
 
     time.sleep(3)
-    # Play the audio
-    playsound(audioFile)
     # Make sure Python is full volume
     for session in sessions:
         if session.Process and session.Process.name() == "Python.exe":
             volume = session._ctl.QueryInterface(ISimpleAudioVolume)
             volume.SetMasterVolume(1.0, None)
-
+    # Play the audio
+    playsound(audioFile)
     time.sleep(3)
 
     # Set all app back to full
